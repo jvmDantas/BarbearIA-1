@@ -1,0 +1,29 @@
+from fastapi import FastAPI
+from controllers.cliente_controller import cliente_controller
+from controllers.funcionario_controller import funcionario_controller
+
+
+# Inicializa a aplicação FastAPI
+app = FastAPI(title='BarbearIA API', version='1.0.0')
+
+# Registra as rotas
+app.include_router(cliente_controller.router)
+app.include_router(funcionario_controller.router)
+
+
+@app.get('/')
+async def root():
+    """Endpoint raiz da API"""
+    return {
+        'message': 'BarbearIA API',
+        'version': '1.0.0',
+        'endpoints': {
+            'clientes': '/clientes',
+            'funcionarios': '/funcionarios'
+        }
+    }
+
+
+if __name__ == '__main__':
+    import uvicorn
+    uvicorn.run(app, host='0.0.0.0', port=8000)

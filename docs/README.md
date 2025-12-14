@@ -13,5 +13,5 @@ Os diagramas estão no formato `.drawio` e `PlantUML` e podem ser abertos com:
 - [Draw.io](https://app.diagrams.net/) (online)
 - Extensão do VS Code: Draw.io Integration
 - Aplicativo desktop Draw.io
-- [PlantUML] (https://www.plantuml.com/) (online)
+- [PlantUML](https://www.plantuml.com/) (online)
 - Extensão do VS Code: PlantUML

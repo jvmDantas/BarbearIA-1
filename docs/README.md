@@ -9,7 +9,7 @@ Diagramas UML do sistema, organizados por tipo:
 
 ## Como Visualizar os Diagramas
 
-Os diagramas estão no formato `.drawio` e `PlantUML` e podem ser abertos com:
+Os diagramas estão no formato `.drawio` e `.puml` e podem ser abertos com:
 - [Draw.io](https://app.diagrams.net/) (online)
 - Extensão do VS Code: Draw.io Integration
 - Aplicativo desktop Draw.io
